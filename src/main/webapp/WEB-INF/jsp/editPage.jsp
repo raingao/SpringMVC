@@ -30,7 +30,7 @@
             <td><input type="text" name="name" value="${item.name}"></td>
             <td><input type="text" name="price" value="${item.price}"></td>
             <td><input type="text" name="detail" value="${item.detail}"></td>
-            <td><input type="file" name="items_pic"><img src="/pic/${item.pic}"/></td>
+            <td><input type="file" name="items_pic"><img src="/upload/${item.pic}" style="width: 100px; height: 100px;"/></td>
         </tr>
         <tr>
             <td colspan="4" align="center">

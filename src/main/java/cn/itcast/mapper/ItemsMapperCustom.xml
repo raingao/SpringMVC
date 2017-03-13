@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="cn.itcast.mapper.ItemsMapperCustom">
+    <!--开启二级缓存-->
+    <!--<cache/>-->
+
     <!--配置resultMap-->
     <resultMap id="itemsResultMap" type="cn.itcast.pojo.ItemsCustom">
         <id column="id" property="id"/>
@@ -28,23 +31,39 @@
 
     <!--依据id删除单条商品信息-->
     <delete id="deleteItemsById" parameterType="int">
-        DELETE FROM items WHERE id = #{id}
+        DELETE FROM items
+        WHERE id = #{id}
     </delete>
 
     <!--查询单条记录根据id-->
     <select id="findItemsById" parameterType="int" resultType="cn.itcast.pojo.ItemsCustom">
-        SELECT items.* FROM items WHERE id = #{id}
+        SELECT items.*
+        FROM items
+        WHERE id = #{id}
     </select>
 
     <!---->
     <update id="updateItemsById" parameterType="cn.itcast.pojo.ItemsCustom">
-        UPDATE items SET
-        items.name = #{name},
-        items.price = #{price},
-        items.createtime = #{createtime},
-        items.detail = #{detail},
-        items.pic = #{pic}
-        WHERE items.id = #{id}
+        # 一定不能忘了set语句中的逗号，尼玛我错了好久都是index out of range
+        UPDATE items
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="price != null and price != ''">
+                price = #{price},
+            </if>
+            <if test="createtime != null and createtime != ''">
+                createtime = #{createtime},
+            </if>
+            <if test="detail != null and detail != ''">
+                detail = #{detail},
+            </if>
+            <if test="pic != null and pic != ''">
+                pic = #{pic}
+            </if>
+        </set>
+        WHERE id = #{id}
     </update>
 
 

@@ -6,10 +6,12 @@ import cn.itcast.pojo.ItemsQueryVo;
 import cn.itcast.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Service
+@Service(value = "itemsService")
+@Transactional
 public class ItemsServiceImpl implements ItemsService {
 
     @Autowired
@@ -33,6 +35,9 @@ public class ItemsServiceImpl implements ItemsService {
     }
     //根据id跟po修改单条商品记录
     public void updateItemsById(ItemsCustom itemsCustom) throws Exception {
+        ItemsCustom item = itemsMapperCustom.findItemsById(itemsCustom.getId());
+        if (item.equals(itemsCustom))
+            return;
         itemsMapperCustom.updateItemsById(itemsCustom);
     }
 }

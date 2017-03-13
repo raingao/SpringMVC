@@ -33,9 +33,9 @@
             <td>${item.name}</td>
             <td>${item.price}</td>
             <td>${item.detail}</td>
-            <td><img src="/upload/${item.pic}"/></td>
+            <td><img src="/upload/${item.pic}" style="width: 100px; height: 100px;"/></td>
             <td><a href="edit/${item.id}">编辑</a></td>
-            <td><a href="delete/${item.id}">删除</a></td>
+            <td><a href="delete/${item.id}" onclick="confirm('是否确认删除');">删除</a></td>
         </tr>
     </c:forEach>
 </table>

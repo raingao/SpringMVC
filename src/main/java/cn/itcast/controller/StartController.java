@@ -3,6 +3,7 @@ package cn.itcast.controller;
 import cn.itcast.pojo.ItemsCustom;
 import cn.itcast.pojo.ItemsQueryVo;
 import cn.itcast.service.ItemsService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +22,8 @@ import java.util.UUID;
 @RequestMapping(value = "/items")
 public class StartController {
 
+    private static Logger logger = Logger.getLogger(StartController.class);
+
     @Autowired
     private ItemsService itemsService;
 
@@ -28,7 +31,7 @@ public class StartController {
      * 进入商品查询界面，暂时不分页
      */
     @RequestMapping("/queryAll")
-    public ModelAndView itemsQuery() {
+    public ModelAndView itemsQuery(HttpServletRequest request) {
         ModelAndView modelAndView = new ModelAndView();
         ItemsQueryVo itemsQueryVo = new ItemsQueryVo();
         List<ItemsCustom> items = new ArrayList<ItemsCustom>();
@@ -39,6 +42,8 @@ public class StartController {
         }
         modelAndView.addObject("items", items);
         modelAndView.setViewName("items");
+        logger.info("获取全部商品信息！");
+        logger.debug(request.getAttribute("name"));
         return modelAndView;
     }
 
@@ -70,6 +75,19 @@ public class StartController {
         model.addAttribute("item", itemsCustom);
         return "editPage";
     }
+//    @RequestMapping(value = "/edit/{id}")
+//    @ResponseBody
+//    public ItemsCustom edit(@PathVariable Integer id, Model model) {
+//        //根据id查找单条记录并显示
+//        ItemsCustom itemsCustom = null;
+//        try {
+//            itemsCustom = itemsService.findItemsById(id);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        model.addAttribute("item", itemsCustom);
+//        return itemsCustom;
+//    }
 
     /**
      * 更新当前信息
@@ -78,32 +96,34 @@ public class StartController {
     public String updateItems(HttpServletRequest request, ItemsCustom itemsCustom, MultipartFile items_pic) {
         try {
             //创建存储路径
-//            String path = request.getSession().getServletContext().getRealPath("upload");
-            String path = request.getSession().getServletContext().getRealPath("/") + "resources/upload";
+            String path = request.getSession().getServletContext().getRealPath("upload");
+//            String path = request.getSession().getServletContext().getRealPath("/") + "resources/upload";
             //文件名称xxx.jpg
             String old_name = items_pic.getOriginalFilename();
-            System.out.println("oldname is " + old_name);
-            //获取文件后缀.jpg并添加到随机名称UUID
-            String new_name = UUID.randomUUID() + old_name.substring(old_name.lastIndexOf("."));
-            System.out.println("new name is" + new_name);
-
-            File pic = new File(path, new_name);
-            //如果文件不存在，则创建
-            if (!pic.exists()) {
-                pic.mkdirs();
+            //声明新的文件名
+            String new_name;
+            //如果文件不为空的话才改名传递，否则不操作pic字段
+            if (old_name != null && !old_name.equals("")) {
+                //获取文件后缀.jpg并添加到随机名称UUID
+                new_name = UUID.randomUUID() + old_name.substring(old_name.lastIndexOf("."));
+                System.out.println("new name is" + new_name);
+                File pic = new File(path, new_name);
+                //如果文件不存在，则创建
+                if (!pic.exists()) {
+                    pic.mkdirs();
+                }
+                //文件转存
+                items_pic.transferTo(pic);
+                //设置图片名称
+                itemsCustom.setPic(new_name);
             }
-            //文件转存
-            items_pic.transferTo(pic);
 
-            itemsCustom.setPic(new_name);
-
+            //更新商品信息
             itemsService.updateItemsById(itemsCustom);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return "redirect:queryAll";
     }
-
 
 }
