@@ -13,8 +13,8 @@
     <!--配置注解驱动-->
     <mvc:annotation-driven>
         <mvc:message-converters>
-            <bean class="org.springframework.http.converter.StringHttpMessageConverter" />
-            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
 
@@ -23,6 +23,7 @@
 
     <!--配置静态资源文件-->
     <mvc:resources mapping="/upload/**" location="/upload/"/>
+    <mvc:resources mapping="/static/**" location="/static/"/>
 
     <!--配置拦截器-->
     <mvc:interceptors>
@@ -41,13 +42,6 @@
     <!--配置上传图片解析器-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="5242880"/>
-    </bean>
-
-    <!--redis工厂-->
-    <bean id="redisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
-        <property name="hostName" value="127.0.0.1"/>
-        <property name="port" value="3306"/>
-        <property name="password" value="123456"/>
     </bean>
 
 </beans>

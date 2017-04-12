@@ -18,7 +18,6 @@
 
     <context:component-scan base-package="cn.itcast.service.impl"/>
 
-
     <!-- 使用spring的事务管理 -->
     <bean name="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
