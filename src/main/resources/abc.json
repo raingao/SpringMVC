@@ -1,0 +1,13 @@
+{
+  "name": "王小二",
+  "age": 25,
+  "birthday": "1991-9-30",
+  "school": "蓝翔技校",
+  "major": [
+    "理发",
+    "挖掘机"
+  ],
+  "hasGirlFriend": false,
+  "car": null,
+  "house": null
+}
