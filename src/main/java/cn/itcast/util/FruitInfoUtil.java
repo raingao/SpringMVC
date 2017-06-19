@@ -1,6 +1,8 @@
 package cn.itcast.util;
 
+import cn.itcast.annotation.FruitColor;
 import cn.itcast.annotation.FruitName;
+import cn.itcast.annotation.FruitProvider;
 
 import java.lang.reflect.Field;
 
@@ -19,10 +21,19 @@ public class FruitInfoUtil {
         // 遍历类成员变量
         for (Field field : fields) {
             if (field.isAnnotationPresent(FruitName.class)) {
-
+                FruitName fruitName = field.getAnnotation(FruitName.class);
+                strFruitName += fruitName.value();
+                System.out.println(strFruitName);
+            } else if (field.isAnnotationPresent(FruitColor.class)) {
+                FruitColor fruitColor = field.getAnnotation(FruitColor.class);
+                strFruitColor += fruitColor.fruitColor().getColor();
+                System.out.println(strFruitColor);
+            } else if (field.isAnnotationPresent(FruitProvider.class)) {
+                FruitProvider fruitProvider = field.getAnnotation(FruitProvider.class);
+                strFruitProvicer = strFruitProvicer + "供应商编号：" + fruitProvider.id() + " 供应商名称：" + fruitProvider.name() + " 供应商地址：" + fruitProvider.address();
+                System.out.println(strFruitProvicer);
             }
         }
-
     }
 
 }

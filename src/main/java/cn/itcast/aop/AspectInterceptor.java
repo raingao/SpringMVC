@@ -14,19 +14,20 @@ import java.util.Arrays;
 
 @Aspect
 @Component
+//@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class AspectInterceptor {
 
     /**
      * 配置一个切入点
      * 后面的通知直接引入切入点
      */
-    @Pointcut(value = "execution(public * cn.itcast.controller.*.*(..))")
+    @Pointcut(value = "execution(public * cn.itcast.controller.UserController.login(..))")
     private void pointcut() {
     }
 
     @Before(value = "pointcut()")
     public void methodBefore(JoinPoint joinPoint) {
-        System.out.println("前置通知：@before" + Arrays.toString(joinPoint.getArgs()));
+        System.out.println("前置通知：@before" + joinPoint.getSignature().getName());
     }
 
     @Around(value = "pointcut()")
@@ -39,7 +40,7 @@ public class AspectInterceptor {
 
     @AfterThrowing(value = "pointcut()", throwing = "ex")
     public void afterThrowing(JoinPoint joinPoint, Throwable ex) {
-        System.out.println("@AfterThrowing" + Arrays.toString(joinPoint.getArgs()));
+        System.out.println("@AfterThrowing" + Arrays.toString(joinPoint.getArgs()) + ex.getMessage());
     }
 
     @After(value = "pointcut()")

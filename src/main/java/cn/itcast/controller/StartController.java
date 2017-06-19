@@ -1,18 +1,23 @@
 package cn.itcast.controller;
 
+import cn.itcast.exception.DiyException;
+import cn.itcast.pojo.Admin;
 import cn.itcast.pojo.ItemsCustom;
 import cn.itcast.pojo.ItemsQueryVo;
 import cn.itcast.service.ItemsService;
+import cn.itcast.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,14 +32,17 @@ public class StartController {
     @Autowired
     private ItemsService itemsService;
 
+    @Autowired
+    private UserService userService;
+
     /**
      * 进入商品查询界面，暂时不分页
      */
     @RequestMapping("/queryAll")
-    public ModelAndView itemsQuery(HttpServletRequest request) {
+    public ModelAndView itemsQuery(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView modelAndView = new ModelAndView();
         ItemsQueryVo itemsQueryVo = new ItemsQueryVo();
-        List<ItemsCustom> items = new ArrayList<ItemsCustom>();
+        List<ItemsCustom> items = new ArrayList();
         try {
             items = itemsService.findItemsList(itemsQueryVo);
         } catch (Exception e) {
@@ -43,7 +51,7 @@ public class StartController {
         modelAndView.addObject("items", items);
         modelAndView.setViewName("items");
         logger.info("获取全部商品信息！");
-        logger.debug(request.getAttribute("name"));
+//        logger.debug(request.getAttribute("name"));
         return modelAndView;
     }
 
@@ -125,5 +133,15 @@ public class StartController {
         }
         return "redirect:queryAll";
     }
+
+    @RequestMapping("/admin/{userName}")
+    public @ResponseBody
+    Admin admin(@PathVariable("userName") String userName) throws DiyException {
+        throw new DiyException("自定义异常");
+//        return userService.findUserByUserName(userName);
+    }
+
+
+
 
 }

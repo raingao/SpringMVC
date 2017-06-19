@@ -1,0 +1,802 @@
+[DEBUG][2017/06/14 12:07:17637][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:17650][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:17651][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:124)]
+Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[INFO ][2017/06/14 12:07:17662][org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)]
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c6a3f77: startup date [Wed Jun 14 12:07:17 CST 2017]; root of context hierarchy
+[DEBUG][2017/06/14 12:07:17759][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:17759][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:17761][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:124)]
+Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[INFO ][2017/06/14 12:07:17780][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext-service.xml]
+[DEBUG][2017/06/14 12:07:17814][org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:73)]
+Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[DEBUG][2017/06/14 12:07:17860][org.springframework.beans.factory.xml.PluggableSchemaResolver.getSchemaMappings(PluggableSchemaResolver.java:141)]
+Loading schema mappings from [META-INF/spring.schemas]
+[DEBUG][2017/06/14 12:07:17881][org.springframework.beans.factory.xml.PluggableSchemaResolver.getSchemaMappings(PluggableSchemaResolver.java:147)]
+Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-4.3.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/redis/spring-redis.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd=org/springframework/data/repository/config/spring-repository-1.8.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.3.xsd=org/springframework/oxm/config/spring-oxm-4.3.xsd, http://www.springframework.org/schema/redis/spring-redis-1.0.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.2.xsd=org/springframework/oxm/config/spring-oxm-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.1.xsd=org/springframework/oxm/config/spring-oxm-4.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd}
+[DEBUG][2017/06/14 12:07:17891][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.3.xsd
+[DEBUG][2017/06/14 12:07:17979][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+[DEBUG][2017/06/14 12:07:180  ][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+[DEBUG][2017/06/14 12:07:1818 ][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/aop/spring-aop.xsd] in classpath: org/springframework/aop/config/spring-aop-4.3.xsd
+[DEBUG][2017/06/14 12:07:1830 ][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.3.xsd
+[DEBUG][2017/06/14 12:07:1844 ][org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:92)]
+Loading bean definitions
+[INFO ][2017/06/14 12:07:1856 ][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)]
+Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+[DEBUG][2017/06/14 12:07:1859 ][org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:73)]
+Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[DEBUG][2017/06/14 12:07:1864 ][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.3.xsd
+[DEBUG][2017/06/14 12:07:18169][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.3.xsd
+[DEBUG][2017/06/14 12:07:18178][org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(PluggableSchemaResolver.java:119)]
+Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.3.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.3.xsd
+[DEBUG][2017/06/14 12:07:18189][org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:92)]
+Loading bean definitions
+[DEBUG][2017/06/14 12:07:18196][org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.getHandlerMappings(DefaultNamespaceHandlerResolver.java:157)]
+Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://www.springframework.org/schema/redis=org.springframework.data.redis.config.RedisNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/data/keyvalue=org.springframework.data.keyvalue.repository.config.KeyValueRepositoryNameSpaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+[DEBUG][2017/06/14 12:07:18243][org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:481)]
+Neither XML 'id' nor 'name' specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+[DEBUG][2017/06/14 12:07:18244][org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:252)]
+Imported 4 bean definitions from relative location [applicationContext-dao.xml]
+[DEBUG][2017/06/14 12:07:18249][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18250][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18250][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:124)]
+Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG][2017/06/14 12:07:18262][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findAllClassPathResources(PathMatchingResourcePatternResolver.java:317)]
+Resolved classpath location [cn/itcast/service/impl/] to resources [URL [file:/Users/gaoyu/project/springmvc/target/test-classes/cn/itcast/service/impl/], URL [file:/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl/]]
+[DEBUG][2017/06/14 12:07:18263][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources(PathMatchingResourcePatternResolver.java:709)]
+Looking for matching resources in directory tree [/Users/gaoyu/project/springmvc/target/test-classes/cn/itcast/service/impl]
+[DEBUG][2017/06/14 12:07:18263][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles(PathMatchingResourcePatternResolver.java:771)]
+Searching directory [/Users/gaoyu/project/springmvc/target/test-classes/cn/itcast/service/impl] for files matching pattern [/Users/gaoyu/project/springmvc/target/test-classes/cn/itcast/service/impl/**/*.class]
+[DEBUG][2017/06/14 12:07:18268][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources(PathMatchingResourcePatternResolver.java:709)]
+Looking for matching resources in directory tree [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl]
+[DEBUG][2017/06/14 12:07:18269][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles(PathMatchingResourcePatternResolver.java:771)]
+Searching directory [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl] for files matching pattern [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl/**/*.class]
+[DEBUG][2017/06/14 12:07:18271][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:481)]
+Resolved location pattern [classpath*:cn/itcast/service/impl/**/*.class] to resources [file [/Users/gaoyu/project/springmvc/target/test-classes/cn/itcast/service/impl/UserServiceImplTest.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl/ItemsServiceImpl.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl/UserServiceImpl.class]]
+[DEBUG][2017/06/14 12:07:18427][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl/ItemsServiceImpl.class]
+[DEBUG][2017/06/14 12:07:18430][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/service/impl/UserServiceImpl.class]
+[DEBUG][2017/06/14 12:07:18477][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18477][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18479][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:124)]
+Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG][2017/06/14 12:07:18483][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findAllClassPathResources(PathMatchingResourcePatternResolver.java:317)]
+Resolved classpath location [cn/itcast/aop/] to resources [URL [file:/Users/gaoyu/project/springmvc/target/cn/itcast/aop/]]
+[DEBUG][2017/06/14 12:07:18483][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources(PathMatchingResourcePatternResolver.java:709)]
+Looking for matching resources in directory tree [/Users/gaoyu/project/springmvc/target/cn/itcast/aop]
+[DEBUG][2017/06/14 12:07:18484][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles(PathMatchingResourcePatternResolver.java:771)]
+Searching directory [/Users/gaoyu/project/springmvc/target/cn/itcast/aop] for files matching pattern [/Users/gaoyu/project/springmvc/target/cn/itcast/aop/**/*.class]
+[DEBUG][2017/06/14 12:07:18485][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:481)]
+Resolved location pattern [classpath*:cn/itcast/aop/**/*.class] to resources [file [/Users/gaoyu/project/springmvc/target/cn/itcast/aop/AspectInterceptor.class]]
+[DEBUG][2017/06/14 12:07:18503][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/aop/AspectInterceptor.class]
+[DEBUG][2017/06/14 12:07:18527][org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:451)]
+No XML 'id' specified - using 'transactionManager' as bean name and [] as aliases
+[DEBUG][2017/06/14 12:07:18564][org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)]
+Loaded 23 bean definitions from location pattern [applicationContext-service.xml]
+[DEBUG][2017/06/14 12:07:18564][org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:616)]
+Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@2c6a3f77: org.springframework.beans.factory.support.DefaultListableBeanFactory@7ff2a664: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,itemsService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,aspectInterceptor,org.springframework.aop.config.internalAutoProxyCreator,transactionManager,transactionAdvice,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,maptest]; root of factory hierarchy
+[DEBUG][2017/06/14 12:07:18611][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:18612][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:18653][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:18660][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:18770][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[DEBUG][2017/06/14 12:07:18771][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[DEBUG][2017/06/14 12:07:18772][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:18841][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[DEBUG][2017/06/14 12:07:18842][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[DEBUG][2017/06/14 12:07:18845][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemProperties] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18845][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [systemEnvironment] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18847][org.springframework.core.env.AbstractEnvironment.<init>(AbstractEnvironment.java:124)]
+Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[DEBUG][2017/06/14 12:07:18852][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findAllClassPathResources(PathMatchingResourcePatternResolver.java:317)]
+Resolved classpath location [cn/itcast/mapper/] to resources [URL [file:/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/]]
+[DEBUG][2017/06/14 12:07:18853][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources(PathMatchingResourcePatternResolver.java:709)]
+Looking for matching resources in directory tree [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper]
+[DEBUG][2017/06/14 12:07:18854][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles(PathMatchingResourcePatternResolver.java:771)]
+Searching directory [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper] for files matching pattern [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/**/*.class]
+[DEBUG][2017/06/14 12:07:18857][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:481)]
+Resolved location pattern [classpath*:cn/itcast/mapper/**/*.class] to resources [file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/AdminMapper.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapper.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapperCustom.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrderdetailMapper.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrdersMapper.class], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/UserMapper.class]]
+[DEBUG][2017/06/14 12:07:18859][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/AdminMapper.class]
+[DEBUG][2017/06/14 12:07:18860][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapper.class]
+[DEBUG][2017/06/14 12:07:18862][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapperCustom.class]
+[DEBUG][2017/06/14 12:07:18864][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrderdetailMapper.class]
+[DEBUG][2017/06/14 12:07:18866][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrdersMapper.class]
+[DEBUG][2017/06/14 12:07:18868][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:286)]
+Identified candidate component class: file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/UserMapper.class]
+[DEBUG][2017/06/14 12:07:18869][org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:180)]
+Creating MapperFactoryBean with name 'adminMapper' and 'cn.itcast.mapper.AdminMapper' mapperInterface
+[DEBUG][2017/06/14 12:07:18873][org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:180)]
+Creating MapperFactoryBean with name 'itemsMapper' and 'cn.itcast.mapper.ItemsMapper' mapperInterface
+[DEBUG][2017/06/14 12:07:18874][org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:180)]
+Creating MapperFactoryBean with name 'itemsMapperCustom' and 'cn.itcast.mapper.ItemsMapperCustom' mapperInterface
+[DEBUG][2017/06/14 12:07:18874][org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:180)]
+Creating MapperFactoryBean with name 'orderdetailMapper' and 'cn.itcast.mapper.OrderdetailMapper' mapperInterface
+[DEBUG][2017/06/14 12:07:18874][org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:180)]
+Creating MapperFactoryBean with name 'ordersMapper' and 'cn.itcast.mapper.OrdersMapper' mapperInterface
+[DEBUG][2017/06/14 12:07:18875][org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:180)]
+Creating MapperFactoryBean with name 'userMapper' and 'cn.itcast.mapper.UserMapper' mapperInterface
+[DEBUG][2017/06/14 12:07:18878][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+[DEBUG][2017/06/14 12:07:18878][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+[DEBUG][2017/06/14 12:07:18879][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:18947][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+[DEBUG][2017/06/14 12:07:18948][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [environmentProperties] PropertySource with lowest search precedence
+[INFO ][2017/06/14 12:07:18955][org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)]
+Loading properties file from class path resource [db.properties]
+[DEBUG][2017/06/14 12:07:18959][org.springframework.core.env.MutablePropertySources.addLast(MutablePropertySources.java:109)]
+Adding [localProperties] PropertySource with lowest search precedence
+[DEBUG][2017/06/14 12:07:18963][org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)]
+Could not find key 'jdbc.driver' in any property source
+[DEBUG][2017/06/14 12:07:18973][org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:151)]
+Found key 'jdbc.driver' in [localProperties] with type [String]
+[DEBUG][2017/06/14 12:07:18975][org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)]
+Could not find key 'jdbc.url' in any property source
+[DEBUG][2017/06/14 12:07:18975][org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:151)]
+Found key 'jdbc.url' in [localProperties] with type [String]
+[DEBUG][2017/06/14 12:07:18976][org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)]
+Could not find key 'jdbc.username' in any property source
+[DEBUG][2017/06/14 12:07:18977][org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:151)]
+Found key 'jdbc.username' in [localProperties] with type [String]
+[DEBUG][2017/06/14 12:07:18978][org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)]
+Could not find key 'jdbc.password' in any property source
+[DEBUG][2017/06/14 12:07:18979][org.springframework.core.env.PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:151)]
+Found key 'jdbc.password' in [localProperties] with type [String]
+[DEBUG][2017/06/14 12:07:18990][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:18991][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:18993][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:1912 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1913 ][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1913 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1914 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:1919 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1924 ][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1924 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1930 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:1940 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:1941 ][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[DEBUG][2017/06/14 12:07:1941 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[DEBUG][2017/06/14 12:07:19108][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:19147][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[DEBUG][2017/06/14 12:07:19156][org.springframework.context.support.AbstractApplicationContext.initMessageSource(AbstractApplicationContext.java:733)]
+Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@7b2bbc3]
+[DEBUG][2017/06/14 12:07:19158][org.springframework.context.support.AbstractApplicationContext.initApplicationEventMulticaster(AbstractApplicationContext.java:757)]
+Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4218d6a3]
+[DEBUG][2017/06/14 12:07:19159][org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:728)]
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ff2a664: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,itemsService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,aspectInterceptor,org.springframework.aop.config.internalAutoProxyCreator,transactionManager,transactionAdvice,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,maptest,adminMapper,itemsMapper,itemsMapperCustom,orderdetailMapper,ordersMapper,userMapper]; root of factory hierarchy
+[DEBUG][2017/06/14 12:07:19163][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+[DEBUG][2017/06/14 12:07:19168][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'dataSource'
+[DEBUG][2017/06/14 12:07:19168][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'dataSource'
+[DEBUG][2017/06/14 12:07:19173][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:19173][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:19181][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:19205][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+[DEBUG][2017/06/14 12:07:19207][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+[DEBUG][2017/06/14 12:07:19210][org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:87)]
+Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:19210][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:19211][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:19213][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:19233][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'transactionPointcut'
+[DEBUG][2017/06/14 12:07:19279][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'transactionPointcut'
+[DEBUG][2017/06/14 12:07:19281][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:19514][org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:226)]
+Found AspectJ method: public java.lang.Object cn.itcast.aop.AspectInterceptor.doAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+[DEBUG][2017/06/14 12:07:19523][org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:226)]
+Found AspectJ method: public void cn.itcast.aop.AspectInterceptor.methodBefore(org.aspectj.lang.JoinPoint)
+[DEBUG][2017/06/14 12:07:19529][org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:226)]
+Found AspectJ method: public void cn.itcast.aop.AspectInterceptor.after()
+[DEBUG][2017/06/14 12:07:19531][org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:226)]
+Found AspectJ method: public void cn.itcast.aop.AspectInterceptor.afterReturning()
+[DEBUG][2017/06/14 12:07:19536][org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:226)]
+Found AspectJ method: public void cn.itcast.aop.AspectInterceptor.afterThrowing(org.aspectj.lang.JoinPoint,java.lang.Throwable)
+[DEBUG][2017/06/14 12:07:19564][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:19570][org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:87)]
+Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:19571][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:19572][org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:87)]
+Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:19572][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:19996][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+[DEBUG][2017/06/14 12:07:200  ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:201  ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:204  ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+[INFO ][2017/06/14 12:07:2038 ][org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName(DriverManagerDataSource.java:133)]
+Loaded JDBC driver: com.mysql.jdbc.Driver
+[DEBUG][2017/06/14 12:07:2039 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:2044 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:2044 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:2045 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:2066 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'dataSource'
+[DEBUG][2017/06/14 12:07:2067 ][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:2067 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:2068 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:2069 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:2080 ][org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:115)]
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[DEBUG][2017/06/14 12:07:2083 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:2092 ][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'dataSource'
+[DEBUG][2017/06/14 12:07:2093 ][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doFindMatchingFileSystemResources(PathMatchingResourcePatternResolver.java:709)]
+Looking for matching resources in directory tree [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper]
+[DEBUG][2017/06/14 12:07:2094 ][org.springframework.core.io.support.PathMatchingResourcePatternResolver.doRetrieveMatchingFiles(PathMatchingResourcePatternResolver.java:771)]
+Searching directory [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper] for files matching pattern [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/*.xml]
+[DEBUG][2017/06/14 12:07:2095 ][org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:481)]
+Resolved location pattern [classpath:cn/itcast/mapper/*.xml] to resources [file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/AdminMapper.xml], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapper.xml], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapperCustom.xml], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrderdetailMapper.xml], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrdersMapper.xml], file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/UserMapper.xml]]
+[DEBUG][2017/06/14 12:07:2096 ][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:2097 ][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:410)]
+Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG][2017/06/14 12:07:20210][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:529)]
+Parsed mapper file: 'file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/AdminMapper.xml]'
+[DEBUG][2017/06/14 12:07:20362][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:529)]
+Parsed mapper file: 'file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapper.xml]'
+[DEBUG][2017/06/14 12:07:20382][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:529)]
+Parsed mapper file: 'file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/ItemsMapperCustom.xml]'
+[DEBUG][2017/06/14 12:07:20410][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:529)]
+Parsed mapper file: 'file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrderdetailMapper.xml]'
+[DEBUG][2017/06/14 12:07:20448][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:529)]
+Parsed mapper file: 'file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/OrdersMapper.xml]'
+[DEBUG][2017/06/14 12:07:20478][org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:529)]
+Parsed mapper file: 'file [/Users/gaoyu/project/springmvc/target/cn/itcast/mapper/UserMapper.xml]'
+[DEBUG][2017/06/14 12:07:20479][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20479][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20480][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20480][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20491][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20492][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[DEBUG][2017/06/14 12:07:20493][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'itemsService'
+[DEBUG][2017/06/14 12:07:20493][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'itemsService'
+[DEBUG][2017/06/14 12:07:20493][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20494][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20499][org.springframework.beans.factory.annotation.InjectionMetadata.checkConfigMembers(InjectionMetadata.java:72)]
+Registered injected element on class [cn.itcast.service.impl.ItemsServiceImpl]: AutowiredFieldElement for private cn.itcast.mapper.ItemsMapperCustom cn.itcast.service.impl.ItemsServiceImpl.itemsMapperCustom
+[DEBUG][2017/06/14 12:07:20500][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'itemsService' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20502][org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:86)]
+Processing injected element of bean 'itemsService': AutowiredFieldElement for private cn.itcast.mapper.ItemsMapperCustom cn.itcast.service.impl.ItemsServiceImpl.itemsMapperCustom
+[DEBUG][2017/06/14 12:07:20509][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20509][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20517][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20518][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20519][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20520][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20521][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20521][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20522][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20522][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20523][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20524][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20526][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'itemsMapperCustom'
+[DEBUG][2017/06/14 12:07:20526][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'itemsMapperCustom'
+[DEBUG][2017/06/14 12:07:20526][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20527][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20527][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'itemsMapperCustom' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20534][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20534][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20534][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20535][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20535][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20551][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'itemsMapperCustom'
+[DEBUG][2017/06/14 12:07:20551][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20552][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20552][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20552][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20560][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'itemsMapperCustom'
+[DEBUG][2017/06/14 12:07:20561][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20562][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20562][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20562][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20570][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.registerDependentBeans(AutowiredAnnotationBeanPostProcessor.java:535)]
+Autowiring by type from bean name 'itemsService' to bean named 'itemsMapperCustom'
+[DEBUG][2017/06/14 12:07:20572][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20574][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20574][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20575][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20580][org.springframework.transaction.interceptor.AbstractFallbackTransactionAttributeSource.getTransactionAttribute(AbstractFallbackTransactionAttributeSource.java:111)]
+Adding transactional method 'cn.itcast.service.impl.ItemsServiceImpl.findItemsList' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+[DEBUG][2017/06/14 12:07:20583][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+[DEBUG][2017/06/14 12:07:20583][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+[DEBUG][2017/06/14 12:07:20596][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20611][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+[DEBUG][2017/06/14 12:07:20612][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+[DEBUG][2017/06/14 12:07:20613][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+[DEBUG][2017/06/14 12:07:20613][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'transactionAdvice'
+[DEBUG][2017/06/14 12:07:20613][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'transactionAdvice'
+[DEBUG][2017/06/14 12:07:20614][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'transactionAdvice' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20614][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'transactionManager'
+[DEBUG][2017/06/14 12:07:20614][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'transactionManager'
+[DEBUG][2017/06/14 12:07:20615][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20615][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20634][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20646][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'dataSource'
+[DEBUG][2017/06/14 12:07:20646][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'transactionManager'
+[DEBUG][2017/06/14 12:07:20647][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20649][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20650][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20651][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20667][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'transactionManager'
+[DEBUG][2017/06/14 12:07:20669][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean '(inner bean)#68878f6d'
+[DEBUG][2017/06/14 12:07:20670][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20671][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20681][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception,+java.lang.RuntimeException]
+[DEBUG][2017/06/14 12:07:20682][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.RuntimeException]
+[DEBUG][2017/06/14 12:07:20683][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.RuntimeException]
+[DEBUG][2017/06/14 12:07:20684][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception]
+[DEBUG][2017/06/14 12:07:20685][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [find*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+[DEBUG][2017/06/14 12:07:20686][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [get*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+[DEBUG][2017/06/14 12:07:20687][org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:96)]
+Adding transactional method [select*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+[DEBUG][2017/06/14 12:07:20687][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20688][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20689][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20689][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20692][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean '(inner bean)#68878f6d'
+[DEBUG][2017/06/14 12:07:20693][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'transactionAdvice'
+[DEBUG][2017/06/14 12:07:20693][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'transactionAdvice'
+[DEBUG][2017/06/14 12:07:20704][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.buildAdvisors(AbstractAutoProxyCreator.java:528)]
+Creating implicit proxy for bean 'itemsService' with 0 common interceptors and 3 specific interceptors
+[DEBUG][2017/06/14 12:07:20705][org.springframework.aop.framework.JdkDynamicAopProxy.getProxy(JdkDynamicAopProxy.java:118)]
+Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.itcast.service.impl.ItemsServiceImpl@13df2a8c]
+[DEBUG][2017/06/14 12:07:20713][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'itemsService'
+[DEBUG][2017/06/14 12:07:20714][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'userService'
+[DEBUG][2017/06/14 12:07:20715][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'userService'
+[DEBUG][2017/06/14 12:07:20715][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20715][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20716][org.springframework.beans.factory.annotation.InjectionMetadata.checkConfigMembers(InjectionMetadata.java:72)]
+Registered injected element on class [cn.itcast.service.impl.UserServiceImpl]: AutowiredFieldElement for private cn.itcast.mapper.AdminMapper cn.itcast.service.impl.UserServiceImpl.adminMapper
+[DEBUG][2017/06/14 12:07:20716][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'userService' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20719][org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:86)]
+Processing injected element of bean 'userService': AutowiredFieldElement for private cn.itcast.mapper.AdminMapper cn.itcast.service.impl.UserServiceImpl.adminMapper
+[DEBUG][2017/06/14 12:07:20720][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'adminMapper'
+[DEBUG][2017/06/14 12:07:20721][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'adminMapper'
+[DEBUG][2017/06/14 12:07:20721][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20721][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20722][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'adminMapper' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20722][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20723][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'adminMapper'
+[DEBUG][2017/06/14 12:07:20723][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20723][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20723][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20723][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20725][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'adminMapper'
+[DEBUG][2017/06/14 12:07:20726][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20726][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20726][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20727][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20729][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.registerDependentBeans(AutowiredAnnotationBeanPostProcessor.java:535)]
+Autowiring by type from bean name 'userService' to bean named 'adminMapper'
+[DEBUG][2017/06/14 12:07:20730][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20730][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20730][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20730][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20732][org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.buildAdvisors(AbstractAutoProxyCreator.java:528)]
+Creating implicit proxy for bean 'userService' with 0 common interceptors and 2 specific interceptors
+[DEBUG][2017/06/14 12:07:20733][org.springframework.aop.framework.JdkDynamicAopProxy.getProxy(JdkDynamicAopProxy.java:118)]
+Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [cn.itcast.service.impl.UserServiceImpl@c667f46]
+[DEBUG][2017/06/14 12:07:20736][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'userService'
+[DEBUG][2017/06/14 12:07:20736][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:20737][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:20737][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:20737][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG][2017/06/14 12:07:20737][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG][2017/06/14 12:07:20737][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG][2017/06/14 12:07:20737][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20738][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20739][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20742][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20743][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20743][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20743][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20746][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG][2017/06/14 12:07:20747][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20747][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20749][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20750][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20751][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20755][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20756][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20757][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20758][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20761][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20761][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'aspectInterceptor'
+[DEBUG][2017/06/14 12:07:20762][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'aspectInterceptor'
+[DEBUG][2017/06/14 12:07:20763][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'aspectInterceptor' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20764][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'aspectInterceptor'
+[DEBUG][2017/06/14 12:07:20764][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[DEBUG][2017/06/14 12:07:20765][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'transactionManager'
+[DEBUG][2017/06/14 12:07:20765][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'transactionAdvice'
+[DEBUG][2017/06/14 12:07:20765][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20765][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20765][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20766][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20766][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20770][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20770][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20770][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20770][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'adminMapper'
+[DEBUG][2017/06/14 12:07:20772][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'itemsMapper'
+[DEBUG][2017/06/14 12:07:20773][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'itemsMapper'
+[DEBUG][2017/06/14 12:07:20773][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20773][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20773][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'itemsMapper' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20773][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20774][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'itemsMapper'
+[DEBUG][2017/06/14 12:07:20774][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20775][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20775][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20775][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20776][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'itemsMapper'
+[DEBUG][2017/06/14 12:07:20776][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'itemsMapperCustom'
+[DEBUG][2017/06/14 12:07:20776][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'orderdetailMapper'
+[DEBUG][2017/06/14 12:07:20776][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'orderdetailMapper'
+[DEBUG][2017/06/14 12:07:20777][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20777][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20777][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'orderdetailMapper' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20778][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20778][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'orderdetailMapper'
+[DEBUG][2017/06/14 12:07:20778][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20779][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20779][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20779][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20779][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'orderdetailMapper'
+[DEBUG][2017/06/14 12:07:20780][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'ordersMapper'
+[DEBUG][2017/06/14 12:07:20780][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'ordersMapper'
+[DEBUG][2017/06/14 12:07:20780][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20780][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20781][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'ordersMapper' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20781][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20781][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'ordersMapper'
+[DEBUG][2017/06/14 12:07:20782][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20782][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20782][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20782][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20783][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'ordersMapper'
+[DEBUG][2017/06/14 12:07:20783][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:221)]
+Creating shared instance of singleton bean 'userMapper'
+[DEBUG][2017/06/14 12:07:20783][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)]
+Creating instance of bean 'userMapper'
+[DEBUG][2017/06/14 12:07:20784][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20784][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20784][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)]
+Eagerly caching bean 'userMapper' to allow for resolving potential circular references
+[DEBUG][2017/06/14 12:07:20784][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20785][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1631)]
+Invoking afterPropertiesSet() on bean with name 'userMapper'
+[DEBUG][2017/06/14 12:07:20785][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20785][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20785][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[DEBUG][2017/06/14 12:07:20786][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG][2017/06/14 12:07:20786][org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)]
+Finished creating instance of bean 'userMapper'
+[DEBUG][2017/06/14 12:07:20787][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20787][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+[DEBUG][2017/06/14 12:07:20821][org.springframework.context.support.AbstractApplicationContext.initLifecycleProcessor(AbstractApplicationContext.java:784)]
+Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@15a04efb]
+[DEBUG][2017/06/14 12:07:20823][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'lifecycleProcessor'
+[DEBUG][2017/06/14 12:07:20828][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'sqlSessionFactory'
+[DEBUG][2017/06/14 12:07:20831][org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)]
+Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+[DEBUG][2017/06/14 12:07:20837][org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)]
+Returning cached instance of singleton bean 'userService'
+[DEBUG][2017/06/14 12:07:20867][org.mybatis.spring.SqlSessionUtils.getSqlSession(SqlSessionUtils.java:97)]
+Creating a new SqlSession
+[DEBUG][2017/06/14 12:07:20881][org.mybatis.spring.SqlSessionUtils.registerSessionHolder(SqlSessionUtils.java:128)]
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f8a9499]
+[DEBUG][2017/06/14 12:07:20922][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)]
+Fetching JDBC Connection from DataSource
+[DEBUG][2017/06/14 12:07:20923][org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:142)]
+Creating new JDBC DriverManager Connection to [jdbc:mysql://127.0.0.1:3306/mybatis?characterEncoding=utf8&useSSL=false]
+[DEBUG][2017/06/14 12:07:21343][org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)]
+Registering transaction synchronization for JDBC Connection
+[DEBUG][2017/06/14 12:07:21344][org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:87)]
+JDBC Connection [com.mysql.jdbc.JDBC4Connection@4ff8d125] will be managed by Spring
+[DEBUG][2017/06/14 12:07:21346][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132)]
+ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4ff8d125]
+[DEBUG][2017/06/14 12:07:21349][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132)]
+==>  Preparing: select id, userName, password, roleId from admin where userName=? 
+[DEBUG][2017/06/14 12:07:21381][org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:132)]
+==> Parameters: gaoyu(String)
+[DEBUG][2017/06/14 12:07:21397][org.mybatis.spring.SqlSessionUtils.closeSqlSession(SqlSessionUtils.java:186)]
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f8a9499]
+[DEBUG][2017/06/14 12:07:21397][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:310)]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f8a9499]
+[DEBUG][2017/06/14 12:07:21398][org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(SqlSessionUtils.java:315)]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7f8a9499]
+[DEBUG][2017/06/14 12:07:21398][org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)]
+Returning JDBC Connection to DataSource

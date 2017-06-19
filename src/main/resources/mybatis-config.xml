@@ -5,11 +5,11 @@
 <configuration>
     <!--settings-->
 
-    <!--<settings>-->
-        <!--<setting name="aggressiveLazyLoading" value="false"/>-->
-        <!--<setting name="lazyLoadingEnabled" value="true"/>-->
-        <!--<setting name="cacheEnabled" value="true"/>-->
-    <!--</settings>-->
+    <settings>
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
 
     <typeAliases>
         <package name="cn.itcast.pojo"/>

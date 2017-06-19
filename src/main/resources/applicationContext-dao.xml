@@ -25,7 +25,9 @@
         <!-- 数据库连接池 -->
         <property name="dataSource" ref="dataSource"/>
         <!-- 加载mybatis的全局配置文件 -->
-        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"/>-->
+        <!-- 加载映射文件的位置，如果在配置文件中已经配置了mapper，就不需要了-->
+        <property name="mapperLocations" value="classpath:cn/itcast/mapper/*.xml"/>
     </bean>
 
     <!-- mapper扫描器 -->
@@ -34,5 +36,6 @@
         <property name="basePackage" value="cn.itcast.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+
 
 </beans>

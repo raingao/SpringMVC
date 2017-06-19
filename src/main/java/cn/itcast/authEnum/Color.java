@@ -5,4 +5,18 @@ package cn.itcast.authEnum;
  * Wish you a good day~
  */
 public enum Color {
+    RED("red"), BLUE("blue"), BLACK("black"), WHITE("white"), ORANGE("orange"), YELLOW("yellow"), GREEN("green"), PURPLE("purple");
+    String color;
+
+    Color(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

@@ -1,3 +1,8 @@
+package cn.itcast.util;
+
+import cn.itcast.pojo.Apple;
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
@@ -5,5 +10,9 @@ import static org.junit.Assert.*;
  * Wish you a good day~
  */
 public class FruitInfoUtilTest {
+    @Test
+    public void getFruitInfo() throws Exception {
+        FruitInfoUtil.getFruitInfo(Apple.class);
+    }
 
 }

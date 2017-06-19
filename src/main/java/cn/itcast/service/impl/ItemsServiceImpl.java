@@ -6,6 +6,7 @@ import cn.itcast.pojo.ItemsQueryVo;
 import cn.itcast.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -23,16 +24,19 @@ public class ItemsServiceImpl implements ItemsService {
         itemsCustomsList = itemsMapperCustom.findItemsList(itemsQueryVo);
         return itemsCustomsList;
     }
+
     //根据id删除单条商品记录
     public void deleteItemsById(Integer id) throws Exception {
         itemsMapperCustom.deleteItemsById(id);
 
     }
+
     //根据id查找单条商品记录
     public ItemsCustom findItemsById(Integer id) throws Exception {
         ItemsCustom itemsById = itemsMapperCustom.findItemsById(id);
         return itemsById;
     }
+
     //根据id跟po修改单条商品记录
     public void updateItemsById(ItemsCustom itemsCustom) throws Exception {
         ItemsCustom item = itemsMapperCustom.findItemsById(itemsCustom.getId());
